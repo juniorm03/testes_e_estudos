@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+article {
+    -webkit-flex: 2;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 20px;
+    color: antiquewhite;
+    text-align: justify;
+}
+
+footer {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+#formulario {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#article_section {
+    background-color: purple;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#lateral_bar {
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 5px;
+}

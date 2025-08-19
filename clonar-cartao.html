@@ -7,13 +7,16 @@
         <meta name="robots" content="follow, index">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <title>Checar cartão</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         
-        <header class="cols-span-full bg-slate-600 p-4 mb-1">
-                <h1 class="text-center text-3xl">Verifique se o seu cartão foi clonado</h1>
-                <p class="text-center">Esta página é dedicada a ajudar você a identificar se o seu cartão de crédito foi clonado. Siga as instruções abaixo para verificar.</p>
-            </header>
+        <header>
+                <div class="bg-blue-400 w-full pt-10 flex flex-col justify-center items-center py-10 text-white">
+                    <h1 class="text-white animate-slidein delay-300 opacity-0 text-6xl py-7 font-medium px-20 text-center">Verifique se o seu cartão foi clonado</h1>
+                    <p class="animate-slidein delay-500 opacity-0 text-xl text-center pb-5">Esta página é dedicada a ajudar você a identificar se o seu cartão de crédito foi clonado. Siga as instruções abaixo para verificar.</p>
+                </div>
+        </header>
         <div class="container m-auto grid grid-cols-4 gap-1 text-white md:grid-cols-12">
             
 
@@ -21,21 +24,29 @@
 
                 <section>
                     
-                    <section class="mt-12">
+                    <section class="mt-5">
                         <form>
-                            <label for="credit_card">Número do cartão de crédito:</label><br>
-                            <input type="text" id="credit_card" name="credit_card" style="width:200px;" placeholder="Digite o número do cartão" required><br><br>
-                                    
-                            <label for="cvc">Número do CVC</label><br>
-                            <input type="text" id="cvc" name="cvc" style="width:200px;" placeholder="Digite o número do CVC" required><br><br>
-                                    
-                            <label for="cpf">Informe seu CPF:</label><br>
-                            <input type="text" id="cpf" name="cpf" style="width:200px;" placeholder="Digite seu CPF" required><br><br>
-                                    
-                            <label for="birthday">Informa sua data de nascimento:</label><br>
-                            <input type="date" id="birthday" name="birthday" style="width:200px;" required><br><br>
+                            <label class="block text-sm font-medium text-white" for="credit_card">Número do cartão de crédito:</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="text" id="credit_card" name="credit_card" placeholder="Digite o número do cartão" required><br>
 
-                            <input type="submit" value="Verificar" onclick="alert('Parabéns, seu cartão foi clonado!')">
+                            <label class="block text-sm font-medium text-white" for="cvc">Nome do titular</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="text" id="cvc" name="cvc" placeholder="Digite seu nome" required><br>
+
+                            <label class="block text-sm font-medium text-white" for="birthday">Data de vencimento:</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="date" id="birthday" name="birthday" required><br>
+                                    
+                            <label class="block text-sm font-medium text-white" for="cvc">Número do CVC</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="text" id="cvc" name="cvc" placeholder="Digite o número do CVC" required><br>
+                                    
+                            <label class="block text-sm font-medium text-white" for="cpf">Informe seu CPF:</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required><br>
+                                    
+                            <label class="block text-sm font-medium text-white" for="birthday">Informa sua data de nascimento:</label><br>
+                            <input class="block w-[250px] p-2 rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 shadow-sm" type="date" id="birthday" name="birthday" required><br>
+
+                            <button class="w-[200px] bg-blue-400 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition" type="submit" onclick="alert('Parabéns, seu cartão foi clonado!')"> Verificar
+                            </button>
+
                         </form><br>
                     </section>
                         
@@ -47,8 +58,8 @@
 
             </main>
 
-            <aside class="col-span-4 bg-slate-600 p-4">Links úteis</aside>
-            <footer class="col-span-full bg-slate-600 p-4 min-h-[120px]">
+            <aside class="col-span-4 bg-blue-600 p-4">Links úteis</aside>
+            <footer class="col-span-full bg-purple-600 p-4 min-h-[120px]">
                 <p class="text-center">&copy; 2025. MONTEIRO Jr, Vanildo. Todos os direitos reservados.</p>
             </footer>
         </div>
